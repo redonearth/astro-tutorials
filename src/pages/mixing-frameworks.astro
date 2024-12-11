@@ -1,0 +1,11 @@
+---
+import MyReactComponent from "../components/MyReactComponent.tsx";
+import MyVueComponent from "../components/MyVueComponent.vue";
+import MySvelteComponent from "../components/MySvelteComponent.svelte";
+---
+
+<div class="flex flex-col gap-y-1 p-2">
+  <MyReactComponent client:load />
+  <MyVueComponent client:load />
+  <MySvelteComponent client:load />
+</div>
